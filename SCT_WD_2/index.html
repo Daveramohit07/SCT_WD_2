@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch-card">
+            <div class="header">
+                <i class="fas fa-stopwatch"></i>
+                <h1>Stopwatch</h1>
+            </div>
+            
+            <div class="display">
+                <div class="time-display">
+                    <span id="hours">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>.
+                    <span id="milliseconds">00</span>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="startBtn" class="btn start-btn">
+                    <i class="fas fa-play"></i>
+                    Start
+                </button>
+                <button id="pauseBtn" class="btn pause-btn" disabled>
+                    <i class="fas fa-pause"></i>
+                    Pause
+                </button>
+                <button id="resetBtn" class="btn reset-btn">
+                    <i class="fas fa-redo"></i>
+                    Reset
+                </button>
+                <button id="lapBtn" class="btn lap-btn" disabled>
+                    <i class="fas fa-flag"></i>
+                    Lap
+                </button>
+            </div>
+            
+            <div class="lap-section">
+                <h3>Lap Times</h3>
+                <div class="lap-container">
+                    <div id="lapList" class="lap-list">
+                        <!-- Lap times will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
